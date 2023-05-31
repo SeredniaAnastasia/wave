@@ -7,11 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&amp;family=Montserrat:wght@500;700&amp;family=Open+Sans:wght@300;400&amp;family=Poppins:ital,wght@0,400;0,500;0,700;1,400&amp;family=Raleway:wght@600;700&amp;family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- <header class="header">
+     <header class="header">
         <div class="container">
                 <div class="header__wraper">
                 <div class="header__top-inner">
@@ -20,29 +27,41 @@
                             <img class="logo__img" src="images/logo.svg" alt="logo">
                         </a>
                     <nav class="menu">  
+                        <button class="menu__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none">
+                              <path d="M0 0H30V2H0V0Z" fill="black"></path>
+                              <path d="M0 8H30V10H0V8Z" fill="black"></path>
+                              <rect y="16" width="30" height="2" fill="black"></rect>
+                            </svg>
+                        </button>
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Про нас</a>
+                                <a class="menu__link" href="#about">Про нас</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Послуги</a>
+                                <a class="menu__link" href="#expertise">Послуги</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Вартість</a>
+                                <a class="menu__link" href="#expertise">Послуги</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Блог</a>
+                                <a class="menu__link" href="#expertise">Послуги</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Команда</a>
+                                <a class="menu__link" href="#services">Вартість</a>
                             </li>
                             <li class="menu__item">
-                                <a class="menu__link" href="#">Контакти</a>
+                                <a class="menu__link" href="#blog">Блог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#team">Команда</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#clienst">Контакти</a>
                             </li>
                         </ul>
                     </nav>  
                     </div>
-                    
             </div>
             <div class="header__content">
                 <div class="header__content-center">
@@ -57,8 +76,8 @@
         </div>
             </div>
         </div>
-    </header>
-    <section class="about">
+    </header> 
+    <section class="about " id="about">
         <div class="container">
             <div class="about__inner container__inner">
                 <h2 class="title">ПРО ШКОЛУ, ПРО СЕРФІНГ, ПРО КАНАРИ <sub>/</sub></h2>
@@ -96,8 +115,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    <section class="expertise">
+    </section> 
+
+    <section class="expertise" id="expertise">
         <div class="container">
             <div class="expertise__inner container__inner">
                 <h2 class="title">У ШКОЛІ Ви отримаєте<sub>/</sub></h2>
@@ -138,18 +158,21 @@
             </div> 
             <div class="expertise__info--wrapper">
                 <div class="expertise__info">
-                    <div class="expertise__info-item">
-                        Приїхали вдруге
-                        <img src="/images/" alt="">
-                        <span style="width: calc(100% - 85%);">85%</span>
+                    <div class="expertise__info-item e1">
+                       
+                        <img src="./images/wave.png" style="width: calc(85% * 0.8);" alt="">
+                        <span >85</span>%
+                       <p>Приїхали вдруге</p> 
                     </div>
-                    <div class="expertise__info-item">
-                        Навчилися кататися
-                        <span style="width: calc(100% - 95%);">95%</span>
+                    <div class="expertise__info-item e2"> 
+                        <img src="./images/wave.png" style="width: calc(95% * 0.8);" alt="">
+                        <span>95%</span>
+                        <p>Навчилися кататися</p>
                     </div>
-                    <div class="expertise__info-item">
-                        Задоволених клієнтів
-                        <span style="width: calc(100% - 99%);">99%</span>
+                    <div class="expertise__info-item e3">
+                        <img src="./images/wave.png" style="width: calc(100% * 0.8);" alt="">
+                        <span >100%</span>
+                        <p>Задоволених клієнтів</p> 
                     </div>
                 </div>
                 <div class="expertise__text">
@@ -167,76 +190,365 @@
             </div>
             </div>
         </div>
-    </section>
-<section class="peaks">
+    </section> 
+ <section class="peaks ">
     <div class="container">
         <div class="peaks__inner">
-            <h2 class="title">ПОКОРЯЙ ВЕРШИНИ<sub>/</sub></h2>
-            <div class="peaks__text">
-                <p>Викладачі нашої школи серфінгу серед кращих серферів на Канарських островах. 
-                    Серед них чемпіон Європи з лонгборду, який з радістю поділиться досвідом як з новачками, так і більш досвідченими серферами.
-                    Усі члени викладацького складу є сертифікованими членами Федерації серфінгу Канарських островів. 
-                    Деякі з них знають українську мову, що безперечно позиціонує нас як українську школу серфінгу за кордоном!
-                </p>
-                <p>
-                    Весь тренерський склад регулярно бере участь у семінарах та курсах підвищення кваліфікації, 
-                    які проводяться по всьому світу різними відомими серф-клубами та федераціями. Тому в нашій школі серфінгу 
-                    ви можете бути спокійними: вас навчають найкращі тренери!
-                </p>
-                <p>
-                    Методика навчання серфінгу розрахована як на новачків, серферів середнього рівня, так і серферів рівня ТОП. 
-                    Тренери знаходять підхід до кожного, незважаючи на те, що навчання серфінгу у нашій школі проводиться у групах. 
-                    Однак, ми пропонуємо персональні уроки серфінгу - тільки ви та тренер!
-                </p>
+            <div class="peaks__inner-content container__inner">
+                <h2 class="title">ПОКОРЯЙ ВЕРШИНИ<sub>/</sub></h2>
+                <div class="peaks__text">
+                    <p>Викладачі нашої школи серфінгу серед кращих серферів на Канарських островах. 
+                        Серед них чемпіон Європи з лонгборду, який з радістю поділиться досвідом як з новачками, так і більш досвідченими серферами.
+                        Усі члени викладацького складу є сертифікованими членами Федерації серфінгу Канарських островів. 
+                        Деякі з них знають українську мову, що безперечно позиціонує нас як українську школу серфінгу за кордоном!
+                    </p>
+                    <p>
+                        Весь тренерський склад регулярно бере участь у семінарах та курсах підвищення кваліфікації, 
+                        які проводяться по всьому світу різними відомими серф-клубами та федераціями. Тому в нашій школі серфінгу 
+                        ви можете бути спокійними: вас навчають найкращі тренери!
+                    </p>
+                    <p>
+                        Методика навчання серфінгу розрахована як на новачків, серферів середнього рівня, так і серферів рівня ТОП. 
+                        Тренери знаходять підхід до кожного, незважаючи на те, що навчання серфінгу у нашій школі проводиться у групах. 
+                        Однак, ми пропонуємо персональні уроки серфінгу - тільки ви та тренер!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="gallery">
+    <div class="container">
+        <div class="gallery__top">
+            <h2 class="title">ГАЛЕРЕЯ<sub>/</sub></h2>
+            <div class="gallery__filter-btn">
+                <button class="gallery-btn" data-filter="all">ВСЕ</button>
+                <button class="gallery-btn" data-filter=".category-a">ТУРИСТИ</button>
+                <button class="gallery-btn" data-filter=".category-b">ПРИРОДА</button>
+                <button class="gallery-btn" data-filter=".category-c">ПРОФІ</button>
+            </div>
+        </div>
+        <div class="gallery__content">
+            <div class="gallery__item mix category-b">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/1.jpg" alt="gallery images">
+                </a>
+            </div>
+            <div class="gallery__item mix category-a">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/2.jpg" alt="gallery images">
+                
+                </a>
+            </div>
+            <div class="gallery__item mix category-a">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/3.jpg" alt="gallery images">
+                
+                </a>
+            </div>
+            <div class="gallery__item mix category-c">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/4.jpg" alt="gallery images">
+                
+                </a>
+            </div>
+            <div class="gallery__item mix category-b">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/5.jpg" alt="gallery images"> 
+                </a>
+            </div>
+            <div class="gallery__item mix category-c">
+                <a href="#" class="gallery__item-link">
+                    <img src="/images/gallery/6.jpg" alt="gallery images"> 
+                </a>
+            </div>
+        </div>
+ 
+        <button class="gallery__add">показати ще</button>
+        <blockquote class="blockquote">
+            "Якщо сумніваєшся - йди катайся."
+            <span class="blockquote__author">Нет Янг, перший Чемпіон Світу з серфінгу</span>
+        </blockquote>
+        <div class="gallery__video">
+            <a data-fancybox class="gallery__video-link" href="https://www.youtube.com/watch?v=3Fe5Ek3neQI">
+                <img src="images/play.svg" alt="play icon">
+                <span class="visually-hiden">Відтворити відео</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gallery__numbers">
+            <h5 class="gallery__numbers-item">
+                450
+                <span>туристів</span>
+            </h5>
+            <h5 class="gallery__numbers-item">
+                2500
+                <span>годин катання</span>
+            </h5>
+            <h5 class="gallery__numbers-item">
+                10
+                <span>проф. тренерів</span>
+            </h5>
+            <h5 class="gallery__numbers-item">
+                365
+                <span>днів на рік</span>
+            </h5>
+        </div>
+    </div>
+</section>
+ <section class="slider-blog" id="blog">
+    <div class="container">
+        <h2 class="title">БЛОГ<sub>/</sub></h2>
+        <div class="slider-blog__inner">
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
+            </div>
+            <div class="slider-blog__item">
+                <a class="slider-blog__item-link" href="#">
+                    <h3 class="slider-blog__item-title">
+                        ЩО НЕОБХІДНО ВЗЯТИ З СОБОЮ НА СЕРФ ТУР
+                    </h3>
+                    <span class="slider-blog__item-descr">
+                        ТОП 20 необхідних речей для комфортного відпочинку та навчання
+                    </span>
+                </a>
             </div>
         </div>
     </div>
 </section>
 
+<section class="team" id="team">
+    <div class="container">
+        <div class="title">НАША КОМАНДА<sub>/</sub></div>
+        <div class="team__items">
+            <div class="team__item">
+                <img src="/images/team-1.jpg" alt="1">
+                <h6 class="team__name">Mike</h6>
+                <p class="team__position">Головний інструктор</p>
+            </div>
+            <div class="team__item">
+                <img src="/images/team-2.jpg" alt="2">
+                <h6 class="team__name">Mary</h6>
+                <p class="team__position">інструктор</p>
+            </div>
+            <div class="team__item">
+                <img src="/images/team-3.jpg" alt="3">
+                <h6 class="team__name">Ольга</h6>
+                <p class="team__position">інструктор</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <div class="container">
+        <h2 class="title">ПАКЕТИ ПОСЛУГ<sub>/</sub></h2>
+        <div class="services__items">
+            <div class="services__item">
+                <div class="">
+            <h3 class="services__item-name">Стандарт</h3>
+            <ul class="services__item-list">
+                <li>Проживання на віллі 6 ночей</li>
+                <li>Номер категорії стандарт</li>
+                <li>Екіпірування для навчання</li>
+                <li>Навчання серфінгу 5 тренувань по 2 години</li>
+                <li>Страховка</li>
+                <li>Вечірка з частуванням та дискотекою</li>
+            </ul>
+        </div>
+            <p class="services__item-num">450<sup>$</sup></p>
+            </div>
+            <div class="services__item">
+                <div class="">
+            <h3 class="services__item-name">Все включено</h3>
+            <ul class="services__item-list">
+                <li>Проживання на віллі 6 ночей</li>
+                <li>Номер категорії люкс</li>
+                <li>Екіпірування для навчання</li>
+                <li>Навчання серфінгу 8 тренувань по 2 години </li>
+                <li>Страховка</li>
+                <li>Вечірка з частуванням та дискотекою</li>
+                <li>Авіа переліт Тенеріфе -Лансароте - Тенеріфе</li>
+                <li>Сніданки на віллі</li>
+            </ul>
+        </div>
+            <p class="services__item-num">950<sup>$</sup></p>
+        </div>
+        <div class="services__item">
+            <div class="">
+            <h3 class="services__item-name">Профі</h3>
+            <ul class="services__item-list">
+                <li>Проживання на віллі 8 ночей</li>
+                <li>Номер категорії люкс</li>
+                <li>Екіпірування для навчання</li>
+                <li>Навчання серфінгу 16 тренувань по 2 години</li>
+                <li>Страховка</li>
+                <li>Вечірка з частуванням та дискотекою</li>
+                <li>Авіа переліт Тенеріфе -Лансароте - Тенеріфе</li>
+                <li>Сніданки на віллі</li>
+            </ul>
+        </div>
+            <p class="services__item-num">1450<sup>$</sup></p>
+            </div>
+        </div>
+    </div>
+</section> 
+ <div class="map">
+    <div class="container">
+        <div class="map__inner">
+            <img class="map__img" src="/images/map.jpg" alt="map">
+            <img class="map__point" src="/images/pin.svg" alt="map point">
+        </div>
+    </div>
+</div> 
+<section class="clienst " id="clienst">
+    <div class="container">
+        <h2 class="title">ЗАЛИШИТИ ЗАЯВКУ<sub>/</sub></h2>
+        <div class="clienst__inner">
+            <form class="clienst__form">
+                <input type="text" placeholder="Ім'я">
+                <input type="tel" placeholder="Телефон">
+                <textarea placeholder="Оставте повідомлення, і ми зв'яжемось з Вами найближчим часом"></textarea>
+                <button type="submit">ВІДПРАВИТИ</button>
+            </form>
+            <div class="clienst__address">
+                <div class="clienst__address-text">
+                <p>Є питання?
+                    Ви можете зв'язатися з нами:</p>
+                   <div class="clients__address-tel">
+                    <span>WhatsApp, Viber, Telegram</span>
+                    <a class="phone" href="tel:+34674863788">+3 467 486-37-88</a>
+                   </div> 
+                   <address>Avenida grandes playas 79, 
+                    Corralejo la Oliva Fuerteventura, 
+                    Spain. 35660</address>
+                </div>
+            </div>
+        </div>
+        <div class="clienst__social">
+            <div class="clienst__social-list">
+                <a href="#" class="clienst__social-item">INSTAGRAM</a>
+                <a href="#" class="clienst__social-item">FACEBOOK</a>
+                <a href="#" class="clienst__social-item">YOUTUBE</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__images">
+        <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+        </a>
+    </div>
+</footer> 
 
 
 
 
 
 
-    <script src="js/main.js"></script>
+<div class="range_expertise">
+<label for="customRange1" class="form-label">Example range</label>
+<input type="range" class="form-range" min="15" max="100" step="5" id="customRange1">
+
+<label for="customRange2" class="form-label">Example range</label>
+<input type="range" class="form-range" min="15" max="100" step="5" id="customRange2">
+
+<label for="customRange3" class="form-label">Example range</label>
+<input type="range" class="form-range" min="15" max="100" step="5" id="customRange3">
+</div>
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 <!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
+
 
 </body></html>
