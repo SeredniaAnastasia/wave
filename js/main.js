@@ -1,7 +1,16 @@
+
+
+window.addEventListener('resize', showWidth);
+function showWidth() {
+  document.querySelector('.widthtablet').innerText = 'Ширина екрана' + document.documentElement.clientWidth;
+}
+showWidth();
 //  new WOW().init();
 //  $(function(){
 //      var mixer = mixitup('.gallery__content');
 //  });
+
+
 $(".menu a").on("click", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
