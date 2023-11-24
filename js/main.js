@@ -1,73 +1,64 @@
+$(function () {
+
+   //Slider
+   $('.blog__list').slick({
+      arrows: false,
+      dots: true
+   });
+
+   //Filter images
+   const mixer = mixitup('.mix__images');
+
+   //Анімація при прокручуванні сторінки
+   $(".menu a, .go-top, .logo, .content__icon").on("click", function (event) {
+      event.preventDefault();
+      var id = $(this).attr('href'),
+         top = ($(id).offset().top);
+      //аніміруємо перехід на відстань - top за 1500 мс
+      $('body,html').animate({ scrollTop: top }, 1500);
+   });
+
+   $(window).scroll(function () {
+      colorHeader();
+      // Действие, если выполнен скролл
+   });
+
+   function updateMenuButton() {
+      $('.menu-button').find('.menu-icon').toggleClass('menu-icon--active');
+      $('.menu').toggleClass('menu--active');
+      setEqualHeight();
+   }
+
+   $('.menu-button').click(function (e) {
+      e.preventDefault();
+      updateMenuButton();
+   });
+
+   $(document).mouseup(function (e) { // події клику по веб-документу
+      const div = $("#id__menu"); // тут вказуємо ID элемента
+      const div1 = $("#id__btn"); // тут вказуємо ID элемента
+      const div3 = $(".menu__link"); // тут вказуємо class элементов
+
+      if (!div.is(e.target) && !div1.is(e.target)  // якщо клік був не по нашому блоку
+         && div.has(e.target).length === 0 && div1.has(e.target).length === 0) { // и не по его дочірнім элементам
+         hiddenMenu();
+      }
+      // при переході по ссилці ховаємо меню 
+      div3.is(e.target) && hiddenMenu();
+   });
+
+   //Ховаємо меню при кліку на ссилку
+   function hiddenMenu() {
+      $('.menu-button').find('.menu-icon').removeClass('menu-icon--active');
+      $('.menu').removeClass('menu--active');
+   }
 
 
-window.addEventListener('resize', showWidth);
-function showWidth() {
-  document.querySelector('.widthtablet').innerText = 'Ширина екрана' + document.documentElement.clientWidth;
-}
-showWidth();
-//  new WOW().init();
-//  $(function(){
-//      var mixer = mixitup('.gallery__content');
-//  });
 
 
-$(".menu a").on("click", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 1500);
+
+
+
+
 });
-
- $('.slider-blog__inner').slick({
-     dots: true,
-     arrows: false,
- });
-
- 
-// expertise__info-item
-
-const expertise = document.querySelector('.expertise__info');
-const range = document.querySelector('.range_expertise');
-
-const img1 = document.querySelector('.expertise__info-item.e1 img')
-const span1 = document.querySelector('.expertise__info-item.e1 span')
-
-const img2 = document.querySelector('.expertise__info-item.e2 img')
-const span2 = document.querySelector('.expertise__info-item.e2 span')
-
-const img3 = document.querySelector('.expertise__info-item.e3 img')
-const span3 = document.querySelector('.expertise__info-item.e3 span')
-
-
-expertise && expertise.addEventListener('click', e=>{
-    if(e.target.closest('.expertise__info')){
-    range.classList.add('expertise__show');
-}
-})
-
-
-document.querySelector('#customRange1').addEventListener('input', function(e){
-console.log(e.target.value)
-span1.innerText=e.target.value;
-img1.style.width =  `calc(${e.target.value}% * 0.8)`
-})
-
-document.querySelector('#customRange2').addEventListener('input', function(e){
-    console.log(e.target.value)
-    span2.innerText=e.target.value;
-    img2.style.width =  `calc(${e.target.value}% * 0.8)`
-    })
-
-    document.querySelector('#customRange3').addEventListener('input', function(e){
-        console.log(e.target.value)
-        span3.innerText=e.target.value;
-        img3.style.width =  `calc(${e.target.value}% * 0.8)`
-        })
-
-
-
-        $('.menu__btn, .menu a').on('click', function(){
-            $('.header__top-inner').toggleClass('header__top-inner--active');
-        });
-        
 
