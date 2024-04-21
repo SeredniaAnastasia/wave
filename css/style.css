@@ -12,7 +12,7 @@ body {
 .wrapper {
   overflow-x: hidden;
 }
-
+ 
 .container {
   max-width: 1220px;
   width: 100%;
@@ -164,90 +164,30 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   padding-top: 52px;
 }
 
 .menu {
   position: relative;
   transition: transform 0.9s;
+
 }
 
-.menu__btn {
+
+.burger {
   display: none;
+  /* padding-top: 8px; */
   align-items: center;
-  justify-content: center;
-  background-color: #13e9ef;
-  padding-top: 5px;
-  height: 50px;
-  width: 60px;
-  border-radius: 5px;
-  left: auto;
+  /* justify-content: center; */
+  /* background-color: #0d302c; */
+  /* height: 50px;
+  width: 60px; */
   right: 35px;
-  top: 40px;
   z-index: 15;
-}
-
-.menu-icon {
-  position: relative;
-  width: 3em;
-  height: 2.25em;
-  display: inline-block;
-}
-
-.menu-icon span {
-  position: absolute;
-  height: 0.1875em;
-  width: 100%;
-  background-color: #363636;
-  -webkit-transition: all 350ms ease-in-out;
-  transition: all 350ms ease-in-out;
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-}
-
-.menu-icon span:nth-child(1) {
-  top: 0.09375em;
-}
-
-.menu-icon span:nth-child(2),
-.menu-icon span:nth-child(3) {
-  top: 0.9375em;
-}
-
-.menu-icon span:nth-child(4) {
-  top: 1.875em;
-}
-
-.menu-button {
-  padding-top: 8px;
-}
-
-.menu-button:hover span,
-.menu-button:focus span,
-.menu-button:active span {
-  background: #D00251;
-}
-
-.menu-icon.menu-icon--active span:nth-child(1),
-.menu-icon.menu-icon--active span:nth-child(4) {
-  opacity: 0;
-}
-
-.menu-icon.menu-icon--active span:nth-child(2) {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-.menu-icon.menu-icon--active span:nth-child(3) {
-  top: 0, 9375;
-
-  transform: rotate(-45deg);
+  border-radius: 5px;
+  /* position: relative; */
+  /* cursor: pointer; */
 }
 
 .menu__list {
@@ -581,6 +521,10 @@ body {
   margin-right: 40px;
 }
 
+.mix__link img{
+  width: 100%;
+}
+
 .mix__link::before {
   position: absolute;
   content: "";
@@ -831,7 +775,7 @@ body {
 .services__block {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .sevices__column {

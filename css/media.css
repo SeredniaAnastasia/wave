@@ -51,6 +51,10 @@
   }
 
   /* ---gallery---- */
+
+  .mix__filters{
+    justify-content: center;
+  }
   /* ---blog------- */
   /* ---our-team--- */
   /* ---services--- */
@@ -84,7 +88,7 @@
     position: fixed;
     transform: translatey(-200%);
     border-radius: 10xp;
-    left: 30%;
+    left: 10px;
     right: 10px;
     z-index: 10;
     -webkit-transform: translatey(-200%);
@@ -141,7 +145,7 @@
     background-color: #c3c9c8;
   }
 
-  .menu__btn {
+  .burger {
     display: flex;
     position: fixed;
   }
@@ -218,6 +222,11 @@
 
   /* ---our-team--- */
   /* ---services--- */
+
+  .services__block {
+    flex-direction: column;
+    align-items: center;
+  }
   /* ----map------- */
   /* ---feedback--- */
   /* ---footer----- */
@@ -250,9 +259,7 @@
     font-size: 16px;
   }
 
-  .menu {
-    left: 10px;
-  }
+
 
   /* ---about------ */
   .about__text p {
@@ -282,36 +289,6 @@
   /* ---serfing---- */
   /* ---gallery---- */
 
-  .mix__filters {
-    flex-direction: column;
-    background-color: #b3b6b3;
-    border: 1px solid #b3b6b3;
-    border-radius: 5px;
-    padding: 3px;
-  }
-
-  .mixitup-control-active {
-    outline: transparent;
-  }
-
-  .mix__filter:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .mix__btn {
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 0;
-  }
-
-  .mix__filter:not(:last-child) .mix__btn {
-    border-bottom: 1px solid #666;
-  }
-
-  .mix__btn:hover,
-  .mix__btn:active {
-    border-radius: 0;
-  }
 
   .blockquote__inner {
     font-size: 24px;
@@ -356,10 +333,7 @@
 
   /* ---services--- */
 
-  .services__block {
-    flex-direction: column;
-    align-items: center;
-  }
+ 
 
   .sevices__column {
     flex-basis: 360px;
