@@ -4,7 +4,7 @@
   "homepage": "https://github.com/SeredniaAnastasia/wave",
   "main": "gulpfile.js",
   "scripts": {
-    "deploy": "gh-pages -d "
+    "deploy": "gh-pages -d ./"
   },
   "author": "serednia anastasia",
   "license": "ISC",
