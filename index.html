@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,8 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/burger.css" />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -35,19 +37,11 @@
                             </div>
                             <div class="header__menu">
 
-                                <div id="id__btn" class="menu__btn">
-                                    <a href="#" class="menu-button">
-                                        <span class="visually-hiden">Відкрити меню</span>
-                                        <div class="menu-icon">
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                            <span></span>
-                                        </div>
-                                    </a>
-                                </div>
+                                <button class="burger" data-burger>
+                                    <span class="burger__line"></span>
+                                </button>
 
-                                <nav class="menu" id="menu">
+                                <nav class="menu" id="menu" data-menu>
                                     <ul id="id__menu" class="menu__list">
                                         <li class="menu__item">
                                             <a class="menu__link" href="#about">Про нас</a>
@@ -684,6 +678,7 @@
     <script src="js/slick.min.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/main.js"></script>
 </body>
 
