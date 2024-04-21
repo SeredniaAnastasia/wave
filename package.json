@@ -1,7 +1,7 @@
 {
   "name": "wawe",
   "version": "1.0.0",
-  "homepage": "https://github.com/SeredniaAnastasia/wave",
+  "homepage": "./",
   "main": "gulpfile.js",
   "scripts": {
     "deploy": "gh-pages -d ./"
