@@ -12,7 +12,7 @@ body {
 .wrapper {
   overflow-x: hidden;
 }
- 
+
 .container {
   max-width: 1220px;
   width: 100%;
@@ -521,7 +521,7 @@ body {
   margin-right: 40px;
 }
 
-.mix__link img{
+.mix__link img {
   width: 100%;
 }
 
@@ -830,24 +830,20 @@ body {
 
 
 .map {
-  max-width: 1473px;
-  height: calc(100vw * 0.3333);
   margin: 0 auto;
-  margin-bottom: calc(100vw * 0.104);
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  width: 100%;
+  max-width: 675px;
 }
 
 /* ---feedback--- */
 
 .feedback {
   margin-bottom: calc(100vw * 0.1);
+  margin-top: calc(100vw * 0.1);
 }
 
 .feedback__title {
-  margin-bottom: calc(100vw * 0.126);
+  margin-bottom: calc(100vw * 0.1);
 }
 
 .feedback__wrapper {
